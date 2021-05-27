@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-landing',
+  templateUrl: './landing/landing.component.html',
+  styleUrls: ['./landing/landing.component.scss']
 })
 export class AppComponent {
   title = 'Wolox';

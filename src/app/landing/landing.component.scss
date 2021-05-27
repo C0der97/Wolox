@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    margin: 0px;
+    font-weight: unset;
+}
+.contenedor{
+    padding: 20px;
+}
+.fila{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.logo{
+    background-color: #fd3d;
+    width: 50vw;
+    padding-left: 50px;
+}
+
+.navbar{
+    width: 50vw;
+    font-size: 1em;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 10px;
+    justify-content: center;
+    list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.activo{
+    border:1px solid blue;
+    border-radius: 0px 50px 0px 50px;
+    color: blue;
+    text-align: center;
+    width: 20%;
+}
+
+.mensaje{
+    margin-top: 30px;
+    padding-left: 50px;
+    width: 50vw;
+}
