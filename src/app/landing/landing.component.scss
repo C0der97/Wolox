@@ -14,9 +14,13 @@ h1{
     flex-wrap: nowrap;
 }
 .logo{
-    background-color: #fd3d;
     width: 50vw;
     padding-left: 50px;
+}
+
+.logo img{
+    margin-top: 20px;
+    width: 150px;
 }
 
 .navbar{
@@ -38,14 +42,18 @@ h1{
 
 .activo{
     border:1px solid blue;
-    border-radius: 0px 50px 0px 50px;
+    border-radius: 25px 25px 25px 25px;
     color: blue;
     text-align: center;
     width: 20%;
 }
 
 .mensaje{
-    margin-top: 30px;
+    margin-top: 10%;
     padding-left: 50px;
+    width: 50vw;
+}
+
+.vector_1{
     width: 50vw;
 }
