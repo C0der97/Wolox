@@ -1,99 +1,125 @@
-@font-face{
-    font-family: 'FiraSans-Medium';
-    src: url("http://localhost:4200/assets/Fonts/Fira_Sans/FiraSans-Medium.ttf");
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("http://localhost:4200/assets/Fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 * {
-    font-family: 'FiraSans-Medium',Helvetica, Arial, Verdana, Tahoma, sans-serif;;
+    font-family: "Montserrat-Regular", Helvetica, Arial, Verdana, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     margin: 0px;
     font-weight: unset;
 }
-.contenedor{
+.contenedor {
     padding: 20px;
 }
-.fila{
+.fila {
     display: flex;
     flex-wrap: nowrap;
 }
 
-@media (max-width: 750px) {
-    .fila{
+@media (max-width: 646px) {
+    .fila {
         display: flex;
         flex-wrap: wrap;
+        //justify-content: space-around;
     }
-  }
 
-.logo{
+    h1{
+        font-size: 0.8rem;
+    }
+    .navbar ul {
+    width: 50vw;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    }
+
+    .img_woloxer {
+        width: 100vw !important;
+ 
+    }
+
+    .seccion_trabajamosJuntos {
+        width: 100vw !important;
+    }
+}
+
+.hero{
+    width: 25vw;
+    height: 50vh;
+}
+
+.logo {
     width: 50vw;
     padding-left: 50px;
 }
 
-.logo img{
+.logo img {
     margin-top: 20px;
     width: 150px;
 }
 
-.navbar{
-    width: 50vw;
+.navbar {
+    display: block;
     font-size: 1em;
 }
 
-.navbar ul{
-    flex-direction: column;
-    align-items: start;
+.navbar ul {
+    width: 50vw;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
-.navbar ul li{
+.navbar ul li {
+    align-content: space-around;
+    left: 20px;
     padding: 10px;
-    display: inline-block;
-    justify-content: center;
     list-style: none;
     list-style-type: none;
-    list-style-position: initial;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 40px;
     cursor: pointer;
     transition: 0.5s;
-
 }
 .navbar ul li:hover {
     color: rgb(94, 100, 100);
-  }
+}
 
 .navbar ul li:nth-child(3):hover {
     background-color: #031b1d;
     color: white;
-  }
- 
-
-.activo{
-    border:1px solid #33ABE1;
-    border-radius: 25px 25px 25px 25px;
-    color: #2AA7DF;
-    text-align: center;
-    width: 20%;
 }
 
-.mensaje{
+.activo {
+    border: 1px solid #33abe1;
+    border-radius: 25px 25px 25px 25px;
+    color: #2aa7df;
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.mensaje {
     margin-top: 10%;
     padding-left: 50px;
     width: 50vw;
 }
 
-.vector_1{
+.vector_1 {
     width: 50vw;
 }
 
-.img_woloxer{
-    width: 50vw;
-    height: 50vh;
+.img_woloxer {
+    width: 50%;
+    height: 25rem;
     padding-left: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://localhost:4200/assets/img_woloxer.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("http://localhost:4200/assets/img_woloxer.png");
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,18 +133,20 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-  }
+}
 
-  .seccion_trabajamosJuntos{
-      width: 50vw;
-      text-align: center;
-      padding: 50px;
-      margin-top: 100px;
+.seccion_trabajamosJuntos {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 
-  }
-
-  .header{
-    background-image: url('http://localhost:4200/assets/Backgrounds/Bg_Header.png');
+.header {
+    background-image: url("http://localhost:4200/assets/Backgrounds/Bg_Header.png");
     background-size: contain;
-    background-position: center;
-  }
+    background-position: top ;
+}
