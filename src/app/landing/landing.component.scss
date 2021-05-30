@@ -77,6 +77,9 @@ h1 {
     .beneficios{
         flex-direction: column;
         align-content: space-around;
+        -webkit-box-shadow: 0 4px 6px -6px #222;
+        -moz-box-shadow: 0 4px 6px -6px #222;
+        box-shadow: 0 4px 6px -6px #222;
     }
 
     .textoBeneficios h3{
@@ -217,4 +220,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.logofooter{
+    justify-content: space-around
 }
