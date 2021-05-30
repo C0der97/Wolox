@@ -24,35 +24,74 @@ h1 {
     .fila {
         display: flex;
         flex-wrap: wrap;
-        //justify-content: space-around;
     }
 
-    h1{
+    .text_woloxer h1{
         font-size: 0.8rem;
     }
+
     .navbar ul {
     width: 50vw;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     }
 
     .img_woloxer {
         width: 100vw !important;
         height: 50vh !important;
- 
+    }
+
+    .menu{
+        justify-content: space-around;
     }
 
     .seccion_trabajamosJuntos {
         width: 100vw !important;
         height: 50vh !important;
-
     }
-}
 
-.hero{
-    width: 25vw;
-    height: 50vh;
+    .logo {
+        width: 100vw !important;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo img {
+        margin-top: 20px;
+        width: 150px;
+    }
+
+    .footer{
+        width: 50% !important;
+        margin-top: 0 !important;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .footer h1,.footer h3{
+        font-size: 1.6rem;
+    }
+
+    .beneficios{
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .textoBeneficios h3{
+        font-size: 1.5rem;
+    }
+
+    .card img{
+        width: 200px;
+    }
+    
+    .card p{
+        font-size: 1.5rem;
+    }
+    
+    
 }
 
 .logo {
@@ -114,9 +153,12 @@ h1 {
 }
 
 .mensaje {
-    margin-top: 10%;
-    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 50vw;
+    justify-content: center;
+    align-content: space-around
 }
 
 .vector_1 {
@@ -124,7 +166,7 @@ h1 {
 }
 
 .img_woloxer {
-    width: 50%;
+    width: 50vw;
     height: 25rem;
     padding-left: 50px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -157,12 +199,22 @@ h1 {
 .header {
     background-image: url("http://localhost:4200/assets/Backgrounds/Bg_Header.png");
     background-size: contain;
-    background-position: top ;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
+.menu{
+    align-items: center;
+}
 
-.tamano{
+.footer{
+    margin-top: -129px;
+    background-image: url("http://localhost:4200/assets/Backgrounds/Bg_Footer.png");
+    background-size: contain;
+    background-position: top;
     width: 100%;
+    height: 37vh;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    justify-content: center;
 }
